@@ -7,8 +7,11 @@
 #include <QFile> // for working with files
 #include <QFileDialog> // for touching the neccessary file from any directory
 #include <QStandardItem> // for forming cells in a table
-#include <QMessageBox> // for working with messageBox
 #include <QJsonArray> // for working with JSON arrays
+#include <QDebug> // for debugging code
+#include <QMessageBox> // for using message box
+#include <QKeyEvent> // for using hot keys
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,6 +33,8 @@ private slots:
     void on_loadData_clicked();
 
     void on_search_clicked();
+
+    void keyPressEvent(QKeyEvent *event) override;
 
 private:
     Ui::MainWindow *ui;

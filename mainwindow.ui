@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QPushButton" name="loadData">
       <property name="text">
-       <string>Load data</string>
+       <string>Load JSON file</string>
       </property>
      </widget>
     </item>
