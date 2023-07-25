@@ -11,7 +11,6 @@
 #include <QDebug> // for debugging code
 #include <QMessageBox> // for using message box
 #include <QKeyEvent> // for using hot keys
-#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
