@@ -44,7 +44,7 @@ void MainWindow::on_loadData_clicked()
 
 void MainWindow::on_search_clicked()
 {
-    QRegExp regExpCyrillic("[а-яА-Я]+");
+    QRegExp regExpCyrillic("[а-яА-Я-]+");
     QString searchString = ui->lineEdit->text();
     QJsonArray jsonArr = doc.array();
     QStandardItemModel* model = new QStandardItemModel(nullptr);
